@@ -8,5 +8,5 @@ Files of workshop sessions and projects of the first front-end development cours
 4. js
 5. jquery
 
-### project
+### projects
 1. simple html form
