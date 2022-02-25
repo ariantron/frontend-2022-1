@@ -1,12 +1,13 @@
-# frontend-2022-1
+# Frontend-2022-1
 Files of workshop sessions and projects of the first front-end development course held by me in 2022.
 
-### sessions subjects
-1. html
-2. css
-3. html/css/bootstrap project
-4. js
-5. jquery
+### Sessions Subjects
+1. Html
+2. CSS
+3. Html/CSS Project
+4. Java Script
+5. JQuery
 
-### projects
-1. simple html form
+### Projects
+1. Simple Html Form
+2. Styled Html Form
