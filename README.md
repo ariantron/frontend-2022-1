@@ -11,3 +11,4 @@ Files of workshop sessions and projects of the first front-end development cours
 ### Projects
 1. Simple Html Form
 2. Styled Html Form
+3. Html/CSS Project (Applications Page)
