@@ -1,5 +1,4 @@
 body {
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #f4f4f4;
@@ -43,9 +42,9 @@ header a {
 }
 
 header li {
-    float: left;
     display: inline;
-    padding: 0 20px 0 20px;
+    padding-right:20px;
+    padding-left:20px;
 }
 
 header #branding {
@@ -138,13 +137,14 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     header #branding,
     header nav,
     header nav li,
     #newsletter h1,
     #newsletter form,
-    #boxes .box {
+    #boxes .box
+    {
         float: none;
         text-align: center;
         width: 100%;
@@ -152,6 +152,10 @@ footer {
 
     header {
         padding-bottom: 20px;
+    }
+
+    section#boxes {
+        text-align: center;
     }
 
     #showcase h1 {

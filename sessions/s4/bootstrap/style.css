@@ -1,0 +1,10 @@
+div.form-center {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.bordered{
+    border:2px dotted black;
+}
