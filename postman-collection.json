@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "c9013d55-8237-4a7f-b18e-1101ac585e2d",
+		"name": "Examples - Products",
+		"description": "This is just a collection to be used by other collections in here so that we are modifying and playing with an example and not a live collection.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3940287",
+		"_collection_link": "https://www.postman.com/api-evangelist/collections/collection/p82aivb/examples-products?source=collection_link"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "List products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "PAPI-Use-Prefixes",
+								"value": "<string>",
+								"description": "(Required) Sets whether to display three-letter prefixes in various ID values in response data. This may override the client's default `usePrefixes` setting. See [ID Prefixes](doc:id-prefixes).\n"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/productz?contractId=<string>&query=hello",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"productz"
+							],
+							"query": [
+								{
+									"key": "contractId",
+									"value": "<string>",
+									"description": "(Required) Unique identifier for the contract.\nSee [ID prefixes](doc:id-prefixes)\nfor details on omitting the value's `ctr_` prefix.\n"
+								},
+								{
+									"key": "query",
+									"value": "hello",
+									"description": "This is the query."
+								}
+							]
+						},
+						"description": "This operation lists the set of products that are available under a given contract. You need a product identifier to create new edge hostnames, CP codes, or properties. The range of rule behaviors available within a property is determined by the assigned product.\n"
+					},
+					"response": [
+						{
+							"name": "response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "PAPI-Use-Prefixes",
+										"value": "<string>",
+										"description": "(Required) Sets whether to display three-letter prefixes in various ID values in response data. This may override the client's default `usePrefixes` setting. See [ID Prefixes](doc:id-prefixes).\n"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/products?contractId=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "contractId",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"accountId\": \"act_1-1TJZFB\",\n \"contractId\": \"ctr_1-1TJZH5\",\n \"products\": {\n  \"items\": [\n   {\n    \"productName\": \"Alta\",\n    \"productId\": \"prd_Alta\"\n   }\n  ]\n }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://akzz-XXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXX.luna.akamaiapis.net/papi/v1",
+			"type": "string"
+		}
+	]
+}
